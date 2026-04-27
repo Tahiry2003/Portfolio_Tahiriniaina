@@ -32,8 +32,8 @@ function Navbar() {
   }, [])
 
   return (
-    <nav className="fixed w-full z-50 backdrop-blur-md">
-      <div className="max-w-7xl mx-auto flex items-center justify-between p-6">
+    <nav className="fixed w-full z-50 backdrop-blur-xl border-b border-collapse">
+      <div className="max-w-7xl mx-auto flex items-center justify-between p-4">
 
         {/* Logo */}
         <h1 className="text-2xl font-bold text-primary">
