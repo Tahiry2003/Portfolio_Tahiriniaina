@@ -6,7 +6,7 @@ import Contact from "./sections/Contact"
 
 function App() {
   return (
-    <div className="bg-[#f8fafc] min-h-screen">
+    <div className="bg-tertiary min-h-screen">
       <Navbar />
       <Hero />
       <About />

@@ -12,10 +12,10 @@ function Navbar() {
 
   return (
     <nav className="fixed w-full z-50">
-      <div className="max-w-6xl mx-auto flex items-center justify-between p-4">
+      <div className="max-w-7xl mx-auto flex items-center justify-between p-6">
 
         {/* Logo (gauche) */}
-        <h1 className="text-2xl font-bold font-Montserrat">
+        <h1 className="text-2xl font-bold text-primary">
         Tahiriniaina Arson
         </h1>
 
@@ -25,7 +25,7 @@ function Navbar() {
             <li key={index}>
               <a
                 href={`#${item.id}`}
-                className="text-gray-700 hover:text-black transition font-semibold"
+                className="text-gray-700 hover:text-primary transition font-semibold"
               >
                 {item.name}
               </a>
@@ -34,9 +34,10 @@ function Navbar() {
         </ul>
 
         {/* Bouton (droite) */}
-        <button className="hidden md:block bg-black text-white px-4 py-2 hover:bg-gray-800 transition font-bold">
-          Contact
+        <button className="hidden md:block bg-black text-tertiary px-4 py-2 hover:bg-gray-800 transition font-bold">
+          Telecharger mon CV
         </button>
+        
 
         {/* Menu mobile button */}
         <button
@@ -55,7 +56,7 @@ function Navbar() {
               <a
                 href={`#${item.id}`}
                 onClick={() => setOpen(false)}
-                className="text-gray-700"
+                className="text-secondary"
               >
                 {item.name}
               </a>
