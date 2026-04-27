@@ -2,6 +2,26 @@ import { useState } from "react"
 
 function Navbar() {
   const [open, setOpen] = useState(false)
+  const [active, setActive] = useState("hero")
+
+  useState(() => {
+  const sections = document.querySelectorAll("section")
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActive(entry.target.id)
+        }
+      })
+    },
+    { threshold: 0.6 }
+  )
+
+  sections.forEach((sec) => observer.observe(sec))
+
+  return () => observer.disconnect()
+}, [])
 
   const menu = [
     { name: "Accueil", id: "hero" },
@@ -25,16 +45,25 @@ function Navbar() {
             <li key={index}>
               <a
                 href={`#${item.id}`}
-                className="text-gray-700 hover:text-primary transition font-semibold"
+                className={`relative text-gray-700 hover:text-primary transition font-semibold pb-1
+                  ${active === item.id ? "text-primary" : ""}
+                `}
               >
                 {item.name}
+
+                {/* ligne active */}
+                <span
+                  className={`absolute left-0 -bottom-1 h-[3px] bg-primary transition-all duration-300
+                    ${active === item.id ? "w-full" : "w-0"}
+                  `}
+                />
               </a>
             </li>
           ))}
         </ul>
 
         {/* Bouton (droite) */}
-        <button className="hidden md:block bg-black text-tertiary px-4 py-2 hover:bg-gray-800 transition font-bold">
+        <button className="hidden md:block bg-gray-700 text-tertiary px-4 py-2 hover:bg-primary transition font-bold">
           Telecharger mon CV
         </button>
         
