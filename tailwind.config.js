@@ -12,6 +12,10 @@ export default {
         tertiary: "#f8f8f8",
         white: "#ffffff",
       },
+      fontFamily: {
+        sans: ['Poppins', 'sans-serif'],
+        title: ['Playfair Display', 'serif'],
+      },
     },
   },
   plugins: [],
