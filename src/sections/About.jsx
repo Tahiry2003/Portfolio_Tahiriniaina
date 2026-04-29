@@ -10,7 +10,7 @@ function About() {
         <div className="w-full">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-primary italic mb-6">
-              Qui suis-je ?
+              _ Qui suis-je ?
             </h2>
 
             <p className="text-secondary leading-relaxed text-2xl font-semibold">
@@ -30,95 +30,91 @@ function About() {
         </div>
 
         <div className="mt-20">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary italic mb-8">
-            Expertises Techniques
+          <h2 className="text-3xl md:text-4xl font-bold text-primary italic mb-6">
+            _ Expertises Techniques
           </h2>
 
-<div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="p-6 text-center">
+              <h3 className="text-3xl font-bold text-primary mb-8">
+                Frontend
+              </h3>
 
-  {/* Frontend */}
-  <div className="p-6 text-center">
-    <h3 className="text-3xl font-bold text-primary mb-8">
-      Frontend
-    </h3>
+              <ul className="flex flex-wrap gap-3 justify-start font-semibold text-lg">
+                <li className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse">
+                  React
+                </li>
+                <li className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse">
+                  Next.js
+                </li>
+                <li className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse ">
+                  JavaScript
+                </li>
+                <li className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse">
+                  HTML
+                </li>
+                <li className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse">
+                  CSS
+                </li>
+                <li className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse">
+                  Tailwind CSS
+                </li>
+              </ul>
+            </div>
 
-    <ul className="flex flex-wrap gap-3 justify-start font-semibold text-lg">
-      <li className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse">
-        React
-      </li>
-      <li className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse">
-        Vue.js
-      </li>
-      <li className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse">
-        Laravel
-      </li>
-      <li className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse">
-        HTML
-      </li>
-      <li className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse">
-        CSS
-      </li>
-      <li className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse">
-        Tailwind CSS
-      </li>
-      <li className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse ">
-        TypeScript
-      </li>
-    </ul>
-  </div>
+            <div className="p-6 text-center">
+              <h3 className="text-3xl font-bold text-primary mb-8">
+                Backend
+              </h3>
 
-  {/* Backend */}
-  <div className="p-6 text-center">
-    <h3 className="text-3xl font-bold text-primary mb-8">
-      Backend
-    </h3>
+              <ul className="flex flex-wrap gap-3 justify-start font-semibold text-lg">
+                <li className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse">
+                  Node.js
+                </li>
+                <li className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse">
+                  Express
+                </li>
+                <li className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse">
+                  PHP
+                </li>
+                <li className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse">
+                  Laravel
+                </li>
+                <li className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse">
+                  Python
+                </li>
+                <li className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse">
+                  API REST
+                </li>
+                <li className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse">
+                  PostgreSQL
+                </li>
+              </ul>
+            </div>
 
-    <ul className="flex flex-wrap gap-3 justify-start font-semibold text-lg">
-      <li className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse">
-        Node.js
-      </li>
-      <li className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse">
-        Express
-      </li>
-      <li className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse">
-        API REST
-      </li>
-      <li className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse">
-        PostgreSQL
-      </li>
-      <li className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse">
-        Architecture MVC
-      </li>
-      <li className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse">
-        Architecture 3tiers
-      </li>
-    </ul>
-  </div>
+            <div className="p-6 text-center">
+              <h3 className="text-3xl font-bold text-primary mb-8">
+                Skills
+              </h3>
 
-  {/* Systèmes */}
-  <div className="p-6 text-center">
-    <h3 className="text-3xl font-bold text-primary mb-8">
-      Skills
-    </h3>
+              <ul className="flex flex-wrap gap-3 justify-start font-semibold text-lg">
+                <li className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse">
+                  Gestion de projet
+                </li>
+                <li className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse">
+                  Conception
+                </li>
+                <li className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse">
+                  UML
+                </li>
+                <li className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse">
+                  2TUP
+                </li>
+              </ul>
+            </div>
 
-    <ul className="flex flex-wrap gap-3 justify-start font-semibold text-lg">
-      <li className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse">
-        Gestion de projet
-      </li>
-      <li className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse">
-        Conception
-      </li>
-      <li className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse">
-        UML
-      </li>
-      <li className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse">
-        2TUP
-      </li>
-    </ul>
-  </div>
-
-</div>        </div>
-
+          </div>        
+        </div>
       </div>
     </section>
   )

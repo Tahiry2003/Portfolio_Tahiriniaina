@@ -1,4 +1,5 @@
 import { Code, Atom, Braces, Rocket } from "lucide-react"
+import photo from "../data/photo.JPG"
 
 function Hero() {
   return (
@@ -31,14 +32,25 @@ function Hero() {
         <div className="flex-1 flex justify-center">
           <div className="relative">
 
-            {/* Image */}
-            <div className="w-64 h-64 md:w-80 md:h-80 overflow-hidden rounded-2xl">
+            <div className="relative flex justify-center">
+
+              {/* Carré arrière (décalé) */}
+              <div className="absolute w-64 h-80 md:w-80 md:h-[400px] bg-gray-200 rounded-2xl translate-x-6 translate-y-6"></div>
+
+              {/* Image principale */}
+              <div className="relative w-64 h-80 md:w-80 md:h-[400px] overflow-hidden rounded-2xl shadow-lg">
+                <img
+                  src={photo}
+                  alt="profile"
+                  className="w-full h-full object-cover"
+                />
+              </div>
 
             </div>
 
 
             {/* Tags dev */}
-            <span className="absolute -top-16 -left-16 flex items-center gap-2 bg-white/80 backdrop-blur-md px-4 py-2 text-sm rounded-full shadow-lg hover:scale-110 transition">
+            <span className="absolute -top-6 -left-16 flex items-center gap-2 bg-white/80 backdrop-blur-md px-4 py-2 text-sm rounded-full shadow-lg hover:scale-110 transition">
               <Code size={16} /> Développeur Web
             </span>
 
@@ -50,7 +62,7 @@ function Hero() {
               <Rocket size={16} className="text-purple-500" /> Full Stack
             </span>
 
-            <span className="absolute -bottom-20 left-16 flex items-center gap-2 bg-white/80 backdrop-blur-md px-4 py-2 text-sm rounded-full shadow-lg hover:scale-110 transition">
+            <span className="absolute -bottom-6 left-16 flex items-center gap-2 bg-white/80 backdrop-blur-md px-4 py-2 text-sm rounded-full shadow-lg hover:scale-110 transition">
               <Braces size={16} className="text-yellow-500" /> JavaScript
             </span>
 
