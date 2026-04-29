@@ -1,5 +1,5 @@
 import { Code, Atom, Braces, Rocket } from "lucide-react"
-import photo from "../data/photo.JPG"
+import photo from "../data/photo.jfif"
 
 function Hero() {
   return (
