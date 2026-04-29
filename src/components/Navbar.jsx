@@ -10,7 +10,6 @@ function Navbar() {
     { name: "Contact", id: "contact" },
   ]
 
-  // ✅ Active section detection
   useEffect(() => {
     const sections = document.querySelectorAll("section")
 

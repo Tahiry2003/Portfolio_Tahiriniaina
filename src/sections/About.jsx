@@ -1,6 +1,6 @@
 function About() {
   return (
-    <section id="about" className="min-h-screen flex items-center">
+    <section id="about" className="min-h-screen scroll-mt-28 mb-28">
       <div className="max-w-7xl mx-auto w-full px-6">
 
         <h1 className="text-6xl font-bold text-secondary italic mb-10">
@@ -26,6 +26,20 @@ function About() {
               l’ensemble du cycle de vie des produits afin de transformer des idées
               en solutions concrètes, performantes et intuitives.
             </p>
+
+            <div className="mt-16 flex items-start gap-4">
+              <div className="w-full md:w-fit bg-gray-100 px-6 py-5 rounded-xl border border-gray-200 shadow-sm">
+                <h1 className="text-2xl md:text-3xl font-bold text-secondary">
+                  + 1 an d’expérience
+                </h1>
+              </div>
+
+              <div className="w-full md:w-fit bg-gray-100 px-6 py-5 rounded-xl border border-gray-200 shadow-sm">
+                <h1 className="text-2xl md:text-3xl font-bold text-secondary">
+                  + 10 projets réalisés
+                </h1>
+              </div>
+            </div>
           </div>
         </div>
 

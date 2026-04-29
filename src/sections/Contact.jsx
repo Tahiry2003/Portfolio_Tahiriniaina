@@ -1,7 +1,11 @@
 function Contact() {
   return (
-    <section id="contact" className="h-screen flex items-center justify-center">
-      <h1 className="text-6xl font-bold text-secondary">Contact</h1>
+    <section id="contact" className="min-h-screen scroll-mt-28">
+      <div className="max-w-7xl mx-auto w-full px-6">
+        <h1 className="text-6xl font-bold text-secondary italic mb-10">
+          02. Contacter moi
+        </h1>
+      </div>
     </section>
   )
 }
