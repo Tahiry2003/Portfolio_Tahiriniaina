@@ -48,8 +48,8 @@ function Navbar() {
 
                 {/* underline active */}
                 <span
-                  className={`absolute left-0 -bottom-1 h-[3px] bg-primary transition-all duration-300
-                    ${active === item.id ? "w-full" : "w-0"}
+                  className={`absolute left-0 -bottom-1 h-[3px] bg-primary transition-all duration-300 origin-left
+                    ${active === item.id ? "w-full scale-x-100" : "scale-x-0"}
                   `}
                 />
               </a>
