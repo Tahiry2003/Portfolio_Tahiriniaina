@@ -15,7 +15,7 @@ function Hero() {
             </span>
 
             <span className="block">
-              Développeur Full Stack Web à la recherche d'une nouvelle opportunité
+              <strong className="bg-yellow-300 text-white">Développeur Full Stack Web</strong> à la recherche d'une nouvelle opportunité
             </span>
           </h1>
 

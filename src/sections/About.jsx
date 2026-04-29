@@ -4,7 +4,7 @@ function About() {
       <div className="max-w-7xl mx-auto w-full px-6">
 
         <h1 className="text-6xl font-bold text-secondary italic mb-10">
-          01. A propos
+          <span className="text-yellow-300">01.</span> A propos
         </h1>
 
         <div className="w-full">
