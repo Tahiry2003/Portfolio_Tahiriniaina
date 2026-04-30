@@ -43,7 +43,7 @@ function Contact() {
 
               {/* GITHUB */}
               <a
-                href="https://github.com/TON_GITHUB"
+                href="https://github.com/Tahiry2003"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 hover:text-black transition"
@@ -54,7 +54,7 @@ function Contact() {
 
               {/* LINKEDIN */}
               <a
-                href="https://linkedin.com/in/TON_LINKEDIN"
+                href="https://linkedin.com/in/tahiriniaina-arson-2a8a1637a"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 hover:text-blue-600 transition"
