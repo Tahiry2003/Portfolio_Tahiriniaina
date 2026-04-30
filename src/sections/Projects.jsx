@@ -23,11 +23,11 @@ function Projects() {
     <section id="projects" className="min-h-screen scroll-mt-28 mb-28">
       <div className="max-w-7xl mx-auto px-6 text-center">
 
-        <h1 className="text-6xl font-bold text-secondary italic mb-8 flex text-start">
+        <h1 className="text-5xl font-bold text-secondary italic mb-8 flex text-start">
           <span className="text-yellow-300">02.</span>Mes projets
         </h1>
 
-        <h2 className="text-3xl md:text-4xl font-bold text-primary italic mb-10 flex text-start">
+        <h2 className="text-3xl font-bold text-primary italic mb-8 flex text-start">
           _ Mes projets recents
         </h2>
 
@@ -37,7 +37,7 @@ function Projects() {
             <button
               key={item}
               onClick={() => setFilter(item)}
-              className={`px-5 py-2 rounded-full border font-semibold transition
+              className={`px-5 py-2 border font-semibold transition
                 ${
                   filter === item
                     ? "bg-primary text-white"

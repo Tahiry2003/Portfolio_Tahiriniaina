@@ -3,13 +3,13 @@ function About() {
     <section id="about" className="min-h-screen scroll-mt-28 mb-28">
       <div className="max-w-7xl mx-auto w-full px-6">
 
-        <h1 className="text-6xl font-bold text-secondary italic mb-10">
+        <h1 className="text-5xl font-bold text-secondary italic mb-8">
           <span className="text-yellow-300">01.</span> A propos
         </h1>
 
         <div className="w-full">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary italic mb-6">
+            <h2 className="text-3xl font-bold text-primary italic mb-6">
               _ Qui suis-je ?
             </h2>
 
@@ -44,7 +44,7 @@ function About() {
         </div>
 
         <div className="mt-20">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary italic mb-6">
+          <h2 className="text-3xl font-bold text-primary italic mb-6">
             _ Expertises Techniques
           </h2>
 
