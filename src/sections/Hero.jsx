@@ -20,12 +20,12 @@ function Hero() {
           </h1>
 
           <div className="mt-6 flex items-center space-x-2">
-            <button className="bg-primary text-white px-6 py-3 font-semibold hover:opacity-90 transition">
+            <a href="#contact" className="bg-primary text-white px-6 py-3 font-semibold hover:opacity-90 transition">
               Me contacter
-            </button>
-            <button className="bg-primary text-white px-6 py-3 font-semibold hover:opacity-90 transition">
+            </a>
+            <a href="#projects" className="bg-primary text-white px-6 py-3 font-semibold hover:opacity-90 transition">
               Voir mes projets
-            </button>
+            </a>
           </div>
         </div>
 
