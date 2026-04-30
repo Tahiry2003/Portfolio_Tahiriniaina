@@ -34,11 +34,8 @@ function Hero() {
 
             <div className="relative flex justify-center">
 
-              {/* Carré arrière (décalé) */}
-              <div className="absolute w-64 h-80 md:w-80 md:h-[400px] bg-gray-200 rounded-2xl translate-x-6 translate-y-6"></div>
-
-              {/* Image principale */}
-              <div className="relative w-64 h-80 md:w-80 md:h-[400px] overflow-hidden rounded-2xl shadow-lg">
+              <div className="absolute w-64 h-80 md:w-80 md:h-[450px] bg-gray-200 rounded-2xl translate-x-6 translate-y-6"></div>
+              <div className="relative w-64 h-80 md:w-80 md:h-[450px] overflow-hidden rounded-2xl shadow-lg">
                 <img
                   src={photo}
                   alt="profile"
