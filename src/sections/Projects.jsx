@@ -6,11 +6,11 @@ function Projects() {
   const [filter, setFilter] = useState("Tous")
 
   const projects = [
-    { title: "MJ Pharma", desc: "Marketplace B2B", type: "Web", img: photo },
-    { title: "Projet 2", desc: "App mobile", type: "Mobile", img: photo },
-    { title: "Projet 3", desc: "Dashboard", type: "Web", img: photo },
-    { title: "Projet 4", desc: "E-commerce", type: "Web", img: photo },
-    { title: "Projet 5", desc: "Portfolio", type: "Web", img: photo },
+    { title: "E-varotra", desc: "Vente de friperie de qualite", type: "Web", img: photo },
+    { title: "Portfolio", desc: "App mobile", type: "Mobile", img: photo },
+    { title: "E-participation", desc: "Doleances citoyenne / info communal", type: "Web", img: photo },
+    { title: "Gestion Cabinet", desc: "Gerer les personnel du cabinet", type: "Web", img: photo },
+    { title: "Recherche operationnel", desc: "Programmation Lineaire simplexe", type: "Web", img: photo },
   ]
 
   // 🔹 Filtrage
@@ -50,13 +50,13 @@ function Projects() {
         </div>
 
         {/* 🔹 GRID */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-3">
           {filteredProjects.map((p, i) => (
             <div
               key={i}
               className="group relative bg-tertiary rounded-3xl border text-left overflow-hidden"
             >
-              <div className="bg-white rounded-t-xl h-52 flex items-center justify-center relative">
+              <div className="bg-white rounded-t-xl h-60 flex items-center justify-center relative">
                 <span className="absolute top-3 left-3 bg-primary text-white text-xs font-semibold px-3 py-1 rounded-full shadow">
                   {p.type}
                 </span>
@@ -73,7 +73,7 @@ function Projects() {
                   <h3 className="text-xl font-bold text-primary">
                     {p.title}
                   </h3>
-                  <p className="text-secondary text-base">
+                  <p className="text-secondary text-base font-semibold">
                     {p.desc}
                   </p>
                 </div>
