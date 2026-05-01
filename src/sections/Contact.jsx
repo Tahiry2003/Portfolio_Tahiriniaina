@@ -45,7 +45,7 @@ function Contact() {
             </h2>
 
             <p className="text-secondary text-lg font-semibold">
-              Discutons de votre projet et trouvons ensemble la meilleure solution.
+              Un projet en tête ou simplement envie de discuter ? Je suis toujours ouvert aux nouvelles opportunités et aux idées créatives.
             </p>
 
             <div className="space-y-4 text-secondary font-semibold">

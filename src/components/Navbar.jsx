@@ -23,7 +23,7 @@ function Navbar() {
           setActive(visible.target.id)
         }
       },
-      { threshold: 0.5 }
+      { threshold: 0.2 }
     )
 
     sections.forEach((sec) => observer.observe(sec))

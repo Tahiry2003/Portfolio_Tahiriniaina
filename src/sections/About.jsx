@@ -36,7 +36,7 @@ function About() {
 
               <div className="w-full md:w-fit bg-gray-100 px-6 py-5 rounded-xl border border-gray-200 shadow-sm">
                 <h1 className="text-2xl md:text-3xl font-bold text-secondary">
-                  + 10 projets réalisés
+                  + 5 projets réalisés
                 </h1>
               </div>
             </div>
@@ -78,7 +78,7 @@ function About() {
 
             <div className="p-6 text-center">
               <h3 className="text-3xl font-bold text-primary mb-8">
-                Backend
+                Backend & SGBD
               </h3>
 
               <ul className="flex flex-wrap gap-3 justify-start font-semibold text-lg">
@@ -89,19 +89,19 @@ function About() {
                   Express
                 </li>
                 <li className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse">
-                  PHP
+                  Flask
                 </li>
                 <li className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse">
                   Laravel
-                </li>
-                <li className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse">
-                  Python
                 </li>
                 <li className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse">
                   API REST
                 </li>
                 <li className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse">
                   PostgreSQL
+                </li>
+                <li className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse">
+                  MySQL
                 </li>
               </ul>
             </div>

@@ -1,5 +1,5 @@
-import { FaGithub, FaLinkedin, FaWhatsapp, FaInstagram } from "react-icons/fa"
-import { MapPin } from "lucide-react"
+import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa"
+import { MapPin, Circle } from "lucide-react"
 
 function Footer() {
   return (
@@ -9,6 +9,15 @@ function Footer() {
 
         {/* 🔹 LEFT */}
         <div className="text-center md:text-left">
+          <div className="flex items-center gap-2 mb-4">
+            <span className="flex items-center gap-2 text-green-700 text-base font-semibold bg-green-100 opacity-80 px-4 py-2 rounded-full border border-green-200 shadow-sm">
+              <span className="relative flex items-center justify-center">
+                <Circle size={12} className="text-green-500 fill-green-500" />
+                <span className="absolute inline-flex h-3 w-3 rounded-full bg-green-500 opacity-40 animate-ping"></span>
+              </span>
+              Ouvert aux opportunités
+            </span>
+          </div>
           <h2 className="text-3xl font-bold italic">R.TA</h2>
           <p className="text-gray-300 text-sm mt-2">
             Développeur Web & Mobile
@@ -55,15 +64,6 @@ function Footer() {
             className="hover:text-green-500 transition transform hover:scale-125"
           >
             <FaWhatsapp />
-          </a>
-
-          <a
-            href="https://instagram.com/TON_INSTAGRAM"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-pink-500 transition transform hover:scale-125"
-          >
-            <FaInstagram />
           </a>
 
         </div>

@@ -1,12 +1,22 @@
 import { Code, Atom, Braces, Rocket } from "lucide-react"
 import photo from "/photo.jfif"
+import { Circle } from "lucide-react"
 
 function Hero() {
   return (
     <section id="hero" className="h-screen flex items-center">
-      <div className="max-w-7xl mx-auto w-full px-6 flex flex-col md:flex-row items-center justify-between gap-10">
+      <div className="max-w-7xl mx-auto w-full px-6 flex flex-col md:flex-row items-center justify-between gap-16">
 
-        <div className="flex-1">
+        <div className="flex-2">
+          <div className="flex items-center gap-2 mb-4">
+            <span className="flex items-center gap-2 text-green-700 text-base font-semibold bg-green-100 px-4 py-2 rounded-full border border-green-200 shadow-sm">
+              <span className="relative flex items-center justify-center">
+                <Circle size={12} className="text-green-500 fill-green-500" />
+                <span className="absolute inline-flex h-3 w-3 rounded-full bg-green-500 opacity-40 animate-ping"></span>
+              </span>
+              Ouvert aux opportunités
+            </span>
+          </div>
           <h1 className="text-3xl md:text-4xl font-bold text-secondary space-y-4">
             <span>Bienvenue, Je suis</span>
 
@@ -15,7 +25,7 @@ function Hero() {
             </span>
 
             <span className="block">
-              <strong className="bg-yellow-300 text-white">Développeur Full Stack</strong> à la recherche d'une nouvelle opportunité
+              <strong className="bg-yellow-300 text-white">Développeur Full Stack Web & Mobile</strong> Motivé et passionné, je transforme des idées en solutions digitales performantes et modernes.
             </span>
           </h1>
 
@@ -48,7 +58,7 @@ function Hero() {
 
             {/* Tags dev */}
             <span className="absolute -top-6 -left-16 flex items-center gap-2 bg-white/80 backdrop-blur-md px-4 py-2 text-sm rounded-full shadow-lg hover:scale-110 transition">
-              <Code size={16} /> Développeur Web
+              <Code size={16} /> Node.js avec Express
             </span>
 
             <span className="absolute top-16 -right-20 flex items-center gap-2 bg-white/80 backdrop-blur-md px-4 py-2 text-sm rounded-full shadow-lg hover:scale-110 transition">
