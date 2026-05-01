@@ -5,60 +5,52 @@
     "desc": "Doleance citoyenne | Info communale",
     "date": "Sept 2025 - Nov 2025",
     "type": "Web",
-    "img": "/projet1.png",
-    "images": ["/projet1.png", "/projet2.png"],
+    "img": "/projet11.png",
+    "images": ["/projet11.png", "/projet12.png", "/projet13.png", "/projet14.png", "/projet15.png", "/projet16.png", "/projet17.png", "/projet18.png", "/projet19.png"],
     "tech": ["React", "Node.js", "Express.js", "TailwindCSS", "PostgreSQL"],
-    "problem": "Manque de communication entre citoyens et autorités locales.",
-    "solution": "Création d’une plateforme permettant de publier des doléances et recevoir des informations communales.",
+    "details": [
+      "Développement d’une API REST avec Node.js et Express",
+      "Mise en place d’une authentification sécurisée",
+      "Implémentation des fonctionnalités CRUD pour les données du système",
+      "Conception et gestion d’une base de données PostgreSQL",
+      "Création d’une interface utilisateur responsive et accessible"
+    ],
     "github": "#"
   },
   {
     "id": "portfolio",
     "title": "Portfolio",
     "desc": "Portfolio personnel moderne",
-    "date": "2025",
+    "date": "Avril 2026 - Mai 2026",
     "type": "Web",
-    "img": "/projet2.png",
-    "images": ["/projet2.png", "/projet1.png", "/projet2.png", "/projet1.png"],
+    "img": "/projet21.png",
+    "images": ["/projet21.png", "/projet22.png", "/projet23.png", "/projet24.png"],
     "tech": ["React", "TailwindCSS"],
-    "problem": "Pas de présence en ligne pour montrer mes compétences.",
-    "solution": "Création d’un portfolio moderne, responsive et interactif.",
-    "github": "#"
-  },
-    {
-    "id": "e-participation",
-    "title": "E-Participation",
-    "desc": "Doleance citoyenne | Info communale",
-    "date": "Sept 2025 - Nov 2025",
-    "type": "Web",
-    "img": "/projet1.png",
-    "tech": ["React", "Node.js", "Express.js", "TailwindCSS", "PostgreSQL"],
-    "problem": "Manque de communication entre citoyens et autorités locales.",
-    "solution": "Création d’une plateforme permettant de publier des doléances et recevoir des informations communales.",
-    "github": "#"
+    "details": [
+      "Création d’un portfolio avec React et Tailwind CSS",
+      "Conception d’une interface moderne et responsive",
+      "Gestion de projets avec données dynamiques",
+      "Intégration d’un formulaire de contact fonctionnel",
+      "Déploiement en ligne du portfolio"
+    ],
+    "github": "https://github.com/Tahiry2003/Portfolio_Tahiriniaina.git"
   },
   {
-    "id": "portfolio",
-    "title": "Portfolio",
-    "desc": "Portfolio personnel moderne",
-    "date": "2025",
+    "id": "gfb",
+    "title": "GFB commande par periode constantes",
+    "desc": "Reapprovisionnement de la quantite par periodes constantes",
+    "date": "Avril 2026",
     "type": "Web",
-    "img": "/projet2.png",
+    "img": "/projet31.png",
+    "images": ["/projet31.png"],
     "tech": ["React", "TailwindCSS"],
-    "problem": "Pas de présence en ligne pour montrer mes compétences.",
-    "solution": "Création d’un portfolio moderne, responsive et interactif.",
-    "github": "#"
-  },
-  {
-    "id": "portfolio",
-    "title": "Portfolio",
-    "desc": "Portfolio personnel moderne",
-    "date": "2025",
-    "type": "Web",
-    "img": "/projet2.png",
-    "tech": ["React", "TailwindCSS"],
-    "problem": "Pas de présence en ligne pour montrer mes compétences.",
-    "solution": "Création d’un portfolio moderne, responsive et interactif.",
-    "github": "#"
+    "details": [
+      "Création API REST",
+      "Authentification JWT",
+      "CRUD complet",
+      "Gestion base de données PostgreSQL",
+      "Interface responsive"
+    ],
+    "github": "https://github.com/Tahiry2003/gfb_periodes_constantes.git"
   }
 ]

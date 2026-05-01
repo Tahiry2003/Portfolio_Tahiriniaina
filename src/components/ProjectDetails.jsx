@@ -39,7 +39,7 @@ const prevImage = () => {
 
       <button
         onClick={onClose}
-        className="absolute z-50 top-3 right-3 bg-primary p-2 text-white rounded-full"
+        className="absolute z-50 top-3 right-3 bg-primary p-2.5 text-white rounded-full"
       >
         <X size={18} />
       </button>
@@ -58,23 +58,6 @@ const prevImage = () => {
             </p>
           </div>
 
-          <div className="mb-4">
-            <h3 className="font-semibold text-primary mb-1">
-              Technologies
-            </h3>
-
-            <ul className="flex flex-wrap gap-3">
-              {project.tech?.map((t, i) => (
-                <li
-                  key={i}
-                  className="bg-gray-100 text-gray-800 text-lg px-6 py-3 rounded-lg border-2 border-collapse"
-                >
-                  {t}
-                </li>
-              ))}
-            </ul>
-          </div>
-
           <div>
             <h3 className="font-semibold text-primary mb-1">
                 Description
@@ -84,6 +67,23 @@ const prevImage = () => {
             </p>
           </div>
 
+          <div>
+            <h3 className="font-semibold text-primary mb-2">
+              Détails du projet
+            </h3>
+
+            <ul className="space-y-2">
+              {project.details?.map((item, i) => (
+                <li
+                  key={i}
+                  className="flex items-center gap-2 text-secondary"
+                >
+                  <span className="w-2 h-2 rounded-full bg-secondary"></span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
 
         <div className="relative">
@@ -92,18 +92,18 @@ const prevImage = () => {
             className="rounded-2xl w-full h-[520px] object-cover shadow-md transition-all duration-300"
           />
 
-          <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+          <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
 
           {images.length > 1 && (
             <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-4">
               <button
                 onClick={prevImage}
-                className="bg-black/60 text-white p-2 rounded-full backdrop-blur-md hover:bg-black/80 hover:scale-110 transition"
+                className="bg-primary text-white p-2.5 rounded-full backdrop-blur-md"
               >
                 <ChevronLeft size={18} />
               </button>
 
-              <div className="flex gap-2">
+              <div className="flex gap-1">
                 {images.map((_, i) => (
                   <div
                     key={i}
@@ -116,7 +116,7 @@ const prevImage = () => {
 
               <button
                 onClick={nextImage}
-                className="bg-black/60 text-white p-2 rounded-full backdrop-blur-md hover:bg-black/80 hover:scale-110 transition"
+                className="bg-primary text-white p-2.5 rounded-full backdrop-blur-md"
               >
                 <ChevronRight size={18} />
               </button>
@@ -125,28 +125,29 @@ const prevImage = () => {
         </div>
       </div>
 
-      <div className="mt-6 space-y-5">
-        <div>
+      <div className="mt-6 space-y-5 font-semibold">
+        <div className="mb-4">
           <h3 className="font-semibold text-primary mb-1">
-            Problème
+            Technologies utilises
           </h3>
-          <p className="text-gray-600">
-            {project.problem}
-          </p>
-        </div>
 
-        <div>
-          <h3 className="font-semibold text-primary mb-1">
-            Solution
-          </h3>
-          <p className="text-gray-600">
-            {project.solution}
-          </p>
+          <ul className="flex flex-wrap gap-3">
+            {project.tech?.map((t, i) => (
+              <li
+                key={i}
+                className="bg-gray-100 text-gray-800 text-lg px-6 py-3 rounded-lg border-2 border-collapse"
+              >
+                {t}
+              </li>
+            ))}
+          </ul>
         </div>
 
         <div className="pt-2">
           <a
             href={project.github}
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 bg-gray-900 text-white px-4 py-2 w-fit hover:opacity-80 transition"
           >
             <FaGithub />

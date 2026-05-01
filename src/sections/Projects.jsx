@@ -47,7 +47,7 @@ function Projects() {
         </div>
 
         {/* GRID */}
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-3">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6">
           {filteredProjects.map((p, i) => (
             <div
               key={i}
