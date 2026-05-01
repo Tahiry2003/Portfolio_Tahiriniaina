@@ -1,3 +1,0 @@
-SERVICE_ID :service_n3cpkvx
-TEMPLATE_ID :template_3pir6kk
-PUBLIC_KEY :IbBjPhNA5NW0X0xXC

@@ -1,19 +1,14 @@
 import { useState } from "react"
 import { ChevronRight } from "lucide-react"
-import photo from "../data/projet.png"
+import ProjectDetails from "../components/ProjectDetails"
+import projectsData from "../data/projects.json"
 
 function Projects() {
   const [filter, setFilter] = useState("Tous")
+  const [selectedProject, setSelectedProject] = useState(null)
 
-  const projects = [
-    { title: "E-varotra", desc: "Vente de friperie de qualite", type: "Web", img: photo },
-    { title: "Portfolio", desc: "App mobile", type: "Mobile", img: photo },
-    { title: "E-participation", desc: "Doleances citoyenne / info communal", type: "Web", img: photo },
-    { title: "Gestion Cabinet", desc: "Gerer les personnel du cabinet", type: "Web", img: photo },
-    { title: "Recherche operationnel", desc: "Programmation Lineaire simplexe", type: "Web", img: photo },
-  ]
+  const projects = projectsData
 
-  // 🔹 Filtrage
   const filteredProjects =
     filter === "Tous"
       ? projects
@@ -23,15 +18,16 @@ function Projects() {
     <section id="projects" className="min-h-screen scroll-mt-28 mb-28">
       <div className="max-w-7xl mx-auto px-6 text-center">
 
+        {/* TITLE */}
         <h1 className="text-5xl font-bold text-secondary italic mb-8 flex text-start">
-          <span className="text-yellow-300">02.</span>Mes projets
+          <span className="text-yellow-300">02.</span> Mes projets
         </h1>
 
         <h2 className="text-3xl font-bold text-primary italic mb-8 flex text-start">
-          _ Mes projets recents
+          _ Mes projets récents
         </h2>
 
-        {/* 🔹 FILTRE */}
+        {/* FILTER */}
         <div className="flex gap-3 mb-10 flex-wrap">
           {["Tous", "Web", "Mobile"].map((item) => (
             <button
@@ -42,21 +38,23 @@ function Projects() {
                   filter === item
                     ? "bg-primary text-white"
                     : "hover:bg-gray-100"
-                }`}
+                }
+              `}
             >
               {item}
             </button>
           ))}
         </div>
 
-        {/* 🔹 GRID */}
+        {/* GRID */}
         <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-3">
           {filteredProjects.map((p, i) => (
             <div
               key={i}
               className="group relative bg-tertiary rounded-3xl border text-left overflow-hidden"
             >
-              <div className="bg-white rounded-t-xl h-60 flex items-center justify-center relative">
+              {/* IMAGE */}
+              <div className="bg-white rounded-t-xl h-60 relative">
                 <span className="absolute top-3 left-3 bg-primary text-white text-xs font-semibold px-3 py-1 rounded-full shadow">
                   {p.type}
                 </span>
@@ -68,6 +66,7 @@ function Projects() {
                 />
               </div>
 
+              {/* CONTENT */}
               <div className="p-5 flex items-center justify-between">
                 <div>
                   <h3 className="text-xl font-bold text-primary">
@@ -78,7 +77,11 @@ function Projects() {
                   </p>
                 </div>
 
-                <button className="w-10 h-10 flex items-center justify-center rounded-full bg-primary opacity-0 group-hover:opacity-100 transition">
+                {/* OPEN MODAL */}
+                <button
+                  onClick={() => setSelectedProject(p)}
+                  className="w-10 h-10 flex items-center justify-center rounded-full bg-primary opacity-0 group-hover:opacity-100 transition"
+                >
                   <ChevronRight size={18} className="text-white" />
                 </button>
               </div>
@@ -86,6 +89,14 @@ function Projects() {
           ))}
         </div>
       </div>
+
+      {/* 🔥 MODAL */}
+      {selectedProject && (
+        <ProjectDetails
+          project={selectedProject}
+          onClose={() => setSelectedProject(null)}
+        />
+      )}
     </section>
   )
 }

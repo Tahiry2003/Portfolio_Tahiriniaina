@@ -1,0 +1,62 @@
+[
+  {
+    "id": "e-varotra",
+    "title": "E-varotra",
+    "desc": "Vente de friperie de qualite",
+    "date": "Jan 2025 - Mars 2025",
+    "type": "Web",
+    "img": "/projet.png",
+    "tech": ["React", "Node.js", "PostgreSQL"],
+    "problem": "Les vendeurs locaux n’avaient pas de plateforme pour vendre leurs produits en ligne.",
+    "solution": "J’ai développé une plateforme e-commerce simple permettant de publier et vendre des produits facilement.",
+    "github": "#"
+  },
+  {
+    "id": "e-participation",
+    "title": "E-Participation",
+    "desc": "Doleance citoyenne | Info communale",
+    "date": "Sept 2025 - Nov 2025",
+    "type": "Web",
+    "img": "/projet.png",
+    "tech": ["React", "Node.js", "Express.js", "TailwindCSS", "PostgreSQL"],
+    "problem": "Manque de communication entre citoyens et autorités locales.",
+    "solution": "Création d’une plateforme permettant de publier des doléances et recevoir des informations communales.",
+    "github": "#"
+  },
+  {
+    "id": "gestion-cabinet",
+    "title": "Gestion Cabinet",
+    "desc": "Gestion du personnel d’un cabinet",
+    "date": "2025",
+    "type": "Mobile",
+    "img": "/projet.png",
+    "tech": ["Python", "PyQt5", "PostgreSQL"],
+    "problem": "La gestion des employés était faite manuellement et source d’erreurs.",
+    "solution": "Développement d’une application desktop pour gérer employés, absences et salaires.",
+    "github": "#"
+  },
+  {
+    "id": "recherche-operationnel",
+    "title": "Recherche Opérationnelle",
+    "desc": "Programmation linéaire (simplexe)",
+    "date": "2024",
+    "type": "Web",
+    "img": "/projet.png",
+    "tech": ["React", "JavaScript", "Math"],
+    "problem": "Difficulté à visualiser les solutions des problèmes de programmation linéaire.",
+    "solution": "Interface interactive pour résoudre les problèmes avec méthode du simplexe.",
+    "github": "#"
+  },
+  {
+    "id": "portfolio",
+    "title": "Portfolio",
+    "desc": "Portfolio personnel moderne",
+    "date": "2025",
+    "type": "Web",
+    "img": "/projet.png",
+    "tech": ["React", "TailwindCSS"],
+    "problem": "Pas de présence en ligne pour montrer mes compétences.",
+    "solution": "Création d’un portfolio moderne, responsive et interactif.",
+    "github": "#"
+  }
+]
