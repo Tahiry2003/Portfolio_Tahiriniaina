@@ -15,13 +15,15 @@ function Navbar() {
 
     const observer = new IntersectionObserver(
       (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActive(entry.target.id)
-          }
-        })
+        const visible = entries
+          .filter((e) => e.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0]
+
+        if (visible) {
+          setActive(visible.target.id)
+        }
       },
-      { threshold: 0.6 }
+      { threshold: 0.5 }
     )
 
     sections.forEach((sec) => observer.observe(sec))
@@ -48,9 +50,9 @@ function Navbar() {
 
                 {/* underline active */}
                 <span
-                  className={`absolute left-0 -bottom-1 h-[3px] bg-primary transition-all duration-300 origin-left
-                    ${active === item.id ? "w-full scale-x-100" : "scale-x-0"}
-                  `}
+                  className={`absolute left-0 -bottom-1 h-[3px] bg-primary transition-all duration-300 origin-left ${
+                    active === item.id ? "w-full scale-x-100" : "scale-x-0"
+                  }`}
                 />
               </a>
             </li>
