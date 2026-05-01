@@ -5,6 +5,7 @@ import { Circle } from "lucide-react"
 function Hero() {
   return (
     <section id="hero" className="h-screen flex items-center">
+      <div className="absolute inset-0 hero-grid pointer-events-none"></div>
       <div className="max-w-7xl mx-auto w-full px-6 flex flex-col md:flex-row items-center justify-between gap-16">
 
         <div className="flex-2">

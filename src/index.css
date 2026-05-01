@@ -23,3 +23,44 @@ html {
 ::-webkit-scrollbar-track {
   background: transparent;
 }
+
+@layer utilities {
+  .hero-grid {
+    background-image: 
+      linear-gradient(to right, rgba(0,0,0,0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0,0,0,0.05) 1px, transparent 1px);
+
+    background-size: 65px 65px;
+
+    /* fade centre + côtés */
+    -webkit-mask-image: 
+      radial-gradient(circle at center,
+        black 40%,
+        rgba(0,0,0,0.6) 65%,
+        transparent 90%
+      ),
+      linear-gradient(to top,
+        transparent 0%,
+        black 20%,
+        black 80%,
+        transparent 100%
+      );
+
+    mask-image: 
+      radial-gradient(circle at center,
+        black 40%,
+        rgba(0,0,0,0.6) 65%,
+        transparent 90%
+      ),
+      linear-gradient(to top,
+        transparent 0%,
+        black 20%,
+        black 80%,
+        transparent 100%
+      );
+
+    /* fusion des masks */
+    mask-composite: intersect;
+    -webkit-mask-composite: destination-in;
+  }
+}
