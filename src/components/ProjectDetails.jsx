@@ -1,9 +1,22 @@
 import { useEffect } from "react"
 import { X } from "lucide-react"
 import { FaGithub } from "react-icons/fa"
+import { useState } from "react"
+import { ChevronLeft, ChevronRight } from "lucide-react"
 
 function ProjectDetails({ project, onClose }) {
 
+  const [index, setIndex] = useState(0)
+
+const images = project.images || [project.img]
+
+const nextImage = () => {
+  setIndex((prev) => (prev + 1) % images.length)
+}
+
+const prevImage = () => {
+  setIndex((prev) => (prev - 1 + images.length) % images.length)
+}
   useEffect(() => {
     document.body.style.overflow = "hidden"
 
@@ -26,7 +39,7 @@ function ProjectDetails({ project, onClose }) {
 
       <button
         onClick={onClose}
-        className="absolute top-3 right-3 bg-primary p-2 text-white rounded-full"
+        className="absolute z-50 top-3 right-3 bg-primary p-2 text-white rounded-full"
       >
         <X size={18} />
       </button>
@@ -73,13 +86,43 @@ function ProjectDetails({ project, onClose }) {
 
         </div>
 
-        <div>
-            <img
-            src={project.img}
-            className="rounded-2xl w-full h-[520px] object-cover shadow-md"
-            />
-        </div>
+        <div className="relative">
+          <img
+            src={images[index]}
+            className="rounded-2xl w-full h-[520px] object-cover shadow-md transition-all duration-300"
+          />
 
+          <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+
+          {images.length > 1 && (
+            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-4">
+              <button
+                onClick={prevImage}
+                className="bg-black/60 text-white p-2 rounded-full backdrop-blur-md hover:bg-black/80 hover:scale-110 transition"
+              >
+                <ChevronLeft size={18} />
+              </button>
+
+              <div className="flex gap-2">
+                {images.map((_, i) => (
+                  <div
+                    key={i}
+                    className={`w-2 h-2 rounded-full transition ${
+                      i === index ? "bg-white" : "bg-white/40"
+                    }`}
+                  />
+                ))}
+              </div>
+
+              <button
+                onClick={nextImage}
+                className="bg-black/60 text-white p-2 rounded-full backdrop-blur-md hover:bg-black/80 hover:scale-110 transition"
+              >
+                <ChevronRight size={18} />
+              </button>
+            </div>
+          )}
+        </div>
       </div>
 
       <div className="mt-6 space-y-5">
