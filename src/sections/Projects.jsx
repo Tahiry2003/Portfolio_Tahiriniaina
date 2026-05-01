@@ -54,7 +54,7 @@ function Projects() {
               className="group relative bg-tertiary rounded-3xl border text-left overflow-hidden"
             >
               {/* IMAGE */}
-              <div className="bg-white rounded-t-xl h-60 relative">
+              <div className="bg-white rounded-t-xl h-auto relative">
                 <span className="absolute top-3 left-3 bg-primary text-white text-xs font-semibold px-3 py-1 rounded-full shadow">
                   {p.type}
                 </span>
@@ -62,12 +62,12 @@ function Projects() {
                 <img
                   src={p.img}
                   alt="project"
-                  className="w-full h-full object-cover"
+                  className="w-full h-[350px] object-cover"
                 />
               </div>
 
               {/* CONTENT */}
-              <div className="p-5 flex items-center justify-between">
+              <div className="p-5 flex items-center justify-between border-t-2">
                 <div>
                   <h3 className="text-xl font-bold text-primary">
                     {p.title}

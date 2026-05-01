@@ -76,7 +76,7 @@ function ProjectDetails({ project, onClose }) {
         <div>
             <img
             src={project.img}
-            className="rounded-2xl w-full h-[450px] object-cover shadow-md"
+            className="rounded-2xl w-full h-[520px] object-cover shadow-md"
             />
         </div>
 
