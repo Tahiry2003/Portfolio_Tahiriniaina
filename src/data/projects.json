@@ -52,5 +52,23 @@
       "Interface responsive"
     ],
     "github": "https://github.com/Tahiry2003/gfb_periodes_constantes.git"
+  },
+  {
+    "id": "ecommerce",
+    "title": "TBE.com ecommerce",
+    "desc": "Site de vente en ligne",
+    "date": "En cours",
+    "type": "Web",
+    "img": "/projet41.png",
+    "images": ["/projet41.png"],
+    "tech": ["Next.js", "TailwindCSS", "Node.js", "Express.js", "PostgreSQL"],
+    "details": [
+      "Création API REST",
+      "Authentification JWT",
+      "CRUD complet",
+      "Gestion base de données PostgreSQL",
+      "Interface responsive"
+    ],
+    "github": "https://github.com/Tahiry2003/gfb_periodes_constantes.git"
   }
 ]
