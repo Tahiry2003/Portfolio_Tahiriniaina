@@ -6,6 +6,7 @@ function Navbar() {
   const menu = [
     { name: "Accueil", id: "hero" },
     { name: "À propos", id: "about" },
+    { name: "Services", id: "services" },
     { name: "Projets", id: "projects" },
     { name: "Contact", id: "contact" },
   ]
