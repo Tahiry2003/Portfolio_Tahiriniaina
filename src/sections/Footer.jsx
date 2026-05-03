@@ -28,12 +28,18 @@ function Footer() {
           </p>
         </div>
 
-        {/* 🔹 CENTER NAV */}
-        <div className="flex justify-center gap-6 text-sm text-gray-300 font-semibold">
-          <a href="#hero" className="hover:text-white transition">Accueil</a>
-          <a href="#about" className="hover:text-white transition">À propos</a>
-          <a href="#projects" className="hover:text-white transition">Projets</a>
-          <a href="#contact" className="hover:text-white transition">Contact</a>
+        <div className="flex flex-col items-center gap-4">
+          <span className="text-sm tracking-widest text-gray-400 font-semibold uppercase">
+            Navigation
+          </span>
+
+          <div className="flex justify-center gap-6 text-sm text-gray-300 font-semibold">
+            <a href="#hero" className="hover:text-white transition">Accueil</a>
+            <a href="#about" className="hover:text-white transition">À propos</a>
+            <a href="#services" className="hover:text-white transition">Services</a>
+            <a href="#projects" className="hover:text-white transition">Projets</a>
+            <a href="#contact" className="hover:text-white transition">Contact</a>
+          </div>
         </div>
 
         {/* 🔹 RIGHT SOCIAL ICONS */}

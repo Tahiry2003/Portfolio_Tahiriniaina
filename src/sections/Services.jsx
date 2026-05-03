@@ -5,7 +5,7 @@ function Service() {
   return (
     <section id="services" className="min-h-screen scroll-mt-28 mb-28">
       <div className="max-w-7xl mx-auto w-full px-6">
-        <h1 className="text-5xl font-bold text-secondary italic mb-12">
+        <h1 className="text-5xl font-bold text-secondary italic mb-8">
           <span className="text-yellow-300">02.</span> Mes Services
         </h1>
 
