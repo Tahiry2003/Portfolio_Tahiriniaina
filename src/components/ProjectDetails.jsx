@@ -28,14 +28,14 @@ const prevImage = () => {
   if (!project) return null
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center font-semibold p-2">
+    <div className="fixed inset-0 z-50 flex items-start md:items-center justify-center font-semibold p-2 py-6 overflow-y-auto">
 
     <div
       className="absolute inset-0 bg-black/40 backdrop-blur-md"
       onClick={onClose}
     ></div>
 
-    <div className="relative bg-white/90 backdrop-blur-xl max-w-7xl w-full rounded-3xl p-6 shadow-2xl border border-gray-200 overflow-y-auto">
+    <div className="relative bg-white/90 backdrop-blur-xl max-w-7xl w-full rounded-3xl p-4 sm:p-6 shadow-2xl border border-gray-200 max-h-[90vh] overflow-y-auto">
       <div className="mb-2">
         <button
           onClick={onClose}
@@ -49,7 +49,7 @@ const prevImage = () => {
       </div>
 
       <div className="max-h-[90vh] overflow-y-auto">
-        <div className="grid md:grid-cols-[1fr_2.5fr] gap-6 items-start">
+        <div className="grid md:grid-cols-[1fr_2.5fr] gap-6 items-start min-h-[70vh] md:min-h-0">
           <div className="space-y-3">
 
             <div>
