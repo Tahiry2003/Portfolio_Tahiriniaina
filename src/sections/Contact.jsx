@@ -29,10 +29,10 @@ function Contact() {
   }
 
   return (
-    <section id="contact" className="min-h-screen scroll-mt-28">
+    <section id="contact" className="min-h-screen scroll-mt-28 mb-14">
       <div className="relative z-10 max-w-7xl mx-auto w-full px-6">
 
-        <h1 className="text-5xl font-bold text-secondary italic mb-8">
+        <h1 className="text-4xl md:text-5xl font-bold text-secondary italic mb-8">
           <span className="text-yellow-300">03.</span> Contactez-moi
         </h1>
 
@@ -40,15 +40,15 @@ function Contact() {
 
           {/* LEFT */}
           <div className="space-y-6">
-            <h2 className="text-3xl font-bold text-primary italic mb-8 flex text-start">
+            <h2 className="text-2xl md:text-3xl font-bold text-primary italic mb-8 flex text-start">
               _ Formulaire de contact
             </h2>
 
-            <p className="text-secondary text-lg font-semibold">
+            <p className="text-secondary text-xl leading-relaxed font-semibold">
               Un projet en tête ou simplement envie de discuter ? Je suis toujours ouvert aux nouvelles opportunités et aux idées créatives.
             </p>
 
-            <div className="space-y-4 text-secondary font-semibold">
+            <div className="space-y-4 text-secondary font-semibold text-xl">
               <a
                 href="mailto:tahiriniainaarson4@gmail.com"
                 className="flex items-center gap-3 transition group"

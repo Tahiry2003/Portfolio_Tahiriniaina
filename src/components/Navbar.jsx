@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react"
+import { Menu, X } from "lucide-react"
 
 function Navbar() {
   const [active, setActive] = useState("hero")
+  const [open, setOpen] = useState(false)
 
   const menu = [
     { name: "Accueil", id: "hero" },
@@ -40,16 +42,16 @@ function Navbar() {
           R.TA
         </h1>
 
+        {/* DESKTOP MENU */}
         <ul className="hidden md:flex gap-8 absolute left-1/2 transform -translate-x-1/2">
           {menu.map((item, index) => (
             <li key={index}>
               <a
                 href={`#${item.id}`}
-                className={`relative text-gray-700 hover:text-primary transition font-semibold pb-1`}
+                className="relative text-gray-700 hover:text-primary transition font-semibold pb-1"
               >
                 {item.name}
 
-                {/* underline active */}
                 <span
                   className={`absolute left-0 -bottom-1 h-[3px] bg-primary transition-all duration-300 origin-left ${
                     active === item.id ? "w-full scale-x-100" : "scale-x-0"
@@ -60,6 +62,7 @@ function Navbar() {
           ))}
         </ul>
 
+        {/* CV DESKTOP */}
         <a
           href="/CV_Tahiriniaina_Arson.pdf"
           download
@@ -67,7 +70,50 @@ function Navbar() {
         >
           Télécharger mon CV
         </a>
+
+        {/* HAMBURGER MOBILE */}
+        <button
+          className="md:hidden text-primary"
+          onClick={() => setOpen(!open)}
+        >
+          {open ? <X strokeWidth={3} /> : <Menu strokeWidth={3} />}
+        </button>
       </div>
+
+      {/* MOBILE MENU */}
+      {open && (
+        <div className="md:hidden h-screen text-lg flex flex-col items-center justify-center gap-6 pb-32 border-t bg-tertiary/75 backdrop-blur-xl">
+      
+          {menu.map((item, index) => (
+            <a
+              key={index}
+              href={`#${item.id}`}
+              onClick={() => setOpen(false)}
+              className={`relative font-semibold transition ${
+                active === item.id ? "text-primary" : "text-gray-700 hover:text-primary"
+              }`}
+            >
+              {item.name}
+
+              {/* underline active mobile */}
+              <span
+                className={`absolute left-0 -bottom-1 h-[3px] bg-primary transition-all duration-300 origin-left ${
+                  active === item.id ? "w-full scale-x-100" : "scale-x-0"
+                }`}
+              />
+            </a>
+          ))}
+
+          <a
+            href="/CV_Tahiriniaina_Arson.pdf"
+            download
+            className="bg-primary text-white px-4 py-2 hover:opacity-80 transition font-semibold"
+          >
+            Télécharger mon CV
+          </a>
+
+        </div>
+      )}
     </nav>
   )
 }

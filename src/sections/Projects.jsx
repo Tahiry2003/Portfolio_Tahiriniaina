@@ -19,11 +19,11 @@ function Projects() {
       <div className="max-w-7xl mx-auto px-6 text-center">
 
         {/* TITLE */}
-        <h1 className="text-5xl font-bold text-secondary italic mb-8 flex text-start">
+        <h1 className="text-4xl md:text-5xl font-bold text-secondary italic mb-8 flex text-start">
           <span className="text-yellow-300">02.</span> Mes projets
         </h1>
 
-        <h2 className="text-3xl font-bold text-primary italic mb-8 flex text-start">
+        <h2 className="text-2xl md:text-3xl font-bold text-primary italic mb-8 flex text-start">
           _ Mes projets récents
         </h2>
 
@@ -68,7 +68,7 @@ function Projects() {
 
               {/* CONTENT */}
               <div className="p-5 flex items-center justify-between border-t-2">
-                <div className="max-w-[350px]">
+                <div className="max-w-[250px] md:max-w-[350px]">
                   <h3 className="text-xl font-bold text-primary">
                     {p.title}
                   </h3>
@@ -80,7 +80,7 @@ function Projects() {
                 {/* OPEN MODAL */}
                 <button
                   onClick={() => setSelectedProject(p)}
-                  className="w-10 h-10 flex items-center justify-center rounded-full bg-primary opacity-0 group-hover:opacity-100 transition"
+                  className="w-10 h-10 flex items-center justify-center rounded-full bg-primary opacity-100 md:opacity-0 group-hover:opacity-100 transition"
                 >
                   <ChevronRight size={18} className="text-white" />
                 </button>

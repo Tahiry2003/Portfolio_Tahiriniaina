@@ -92,7 +92,7 @@ const prevImage = () => {
           <div className="relative">
             <img
               src={images[index]}
-              className="rounded-2xl w-full h-[520px] object-cover shadow-md transition-all duration-300"
+              className="rounded-2xl w-full h-[300px] sm:h-[400px] md:h-[520px] object-cover shadow-md transition-all duration-300"
             />
 
             <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>

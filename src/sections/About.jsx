@@ -2,14 +2,13 @@ function About() {
   return (
     <section id="about" className="min-h-screen scroll-mt-28 mb-28">
       <div className="max-w-7xl mx-auto w-full px-6">
-
-        <h1 className="text-5xl font-bold text-secondary italic mb-8">
+        <h1 className="text-4xl md:text-5xl font-bold text-secondary italic mb-8">
           <span className="text-yellow-300">01.</span> A propos
         </h1>
 
         <div className="w-full">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-3xl font-bold text-primary italic mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-primary italic mb-6">
               _ Qui suis-je ?
             </h2>
 
@@ -27,15 +26,15 @@ function About() {
               en solutions concrètes, performantes et intuitives.
             </p>
 
-            <div className="mt-16 flex items-start gap-4">
-              <div className="w-full md:w-fit bg-gray-100 px-6 py-5 rounded-xl border border-gray-200 shadow-sm">
-                <h1 className="text-2xl md:text-3xl font-bold text-secondary">
+            <div className="mt-10 md:mt-16 flex flex-col sm:flex-row items-start gap-4">
+              <div className="w-full sm:w-fit bg-gray-100 px-6 py-5 rounded-xl border border-gray-200 shadow-sm">
+                <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-secondary">
                   + 1 an d’expérience
                 </h1>
               </div>
 
-              <div className="w-full md:w-fit bg-gray-100 px-6 py-5 rounded-xl border border-gray-200 shadow-sm">
-                <h1 className="text-2xl md:text-3xl font-bold text-secondary">
+              <div className="w-full sm:w-fit bg-gray-100 px-6 py-5 rounded-xl border border-gray-200 shadow-sm">
+                <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-secondary">
                   + 5 projets réalisés
                 </h1>
               </div>
@@ -44,17 +43,17 @@ function About() {
         </div>
 
         <div className="mt-20">
-          <h2 className="text-3xl font-bold text-primary italic mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-primary italic mb-6">
             _ Expertises Techniques
           </h2>
 
           <div className="grid md:grid-cols-3 gap-6">
             <div className="p-6 text-center">
-              <h3 className="text-3xl font-bold text-primary mb-8">
+              <h3 className="text-2xl md:text-3xl font-bold text-primary mb-8">
                 Frontend
               </h3>
 
-              <ul className="flex flex-wrap gap-3 justify-start font-semibold text-lg">
+              <ul className="flex flex-wrap gap-3 justify-center md:justify-start font-semibold text-lg">
                 <li className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse">
                   React
                 </li>
@@ -77,11 +76,11 @@ function About() {
             </div>
 
             <div className="p-6 text-center">
-              <h3 className="text-3xl font-bold text-primary mb-8">
+              <h3 className="text-2xl md:text-3xl font-bold text-primary mb-8">
                 Backend & SGBD
               </h3>
 
-              <ul className="flex flex-wrap gap-3 justify-start font-semibold text-lg">
+              <ul className="flex flex-wrap gap-3 justify-center md:justify-start font-semibold text-lg">
                 <li className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse">
                   Node.js
                 </li>
@@ -107,11 +106,11 @@ function About() {
             </div>
 
             <div className="p-6 text-center">
-              <h3 className="text-3xl font-bold text-primary mb-8">
+              <h3 className="text-2xl md:text-3xl font-bold text-primary mb-8">
                 Skills
               </h3>
 
-              <ul className="flex flex-wrap gap-3 justify-start font-semibold text-lg">
+              <ul className="flex flex-wrap gap-3 justify-center md:justify-start font-semibold text-lg">
                 <li className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse">
                   Gestion de projet
                 </li>

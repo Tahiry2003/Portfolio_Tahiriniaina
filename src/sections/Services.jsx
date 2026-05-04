@@ -5,7 +5,7 @@ function Service() {
   return (
     <section id="services" className="min-h-screen scroll-mt-28 mb-28">
       <div className="max-w-7xl mx-auto w-full px-6">
-        <h1 className="text-5xl font-bold text-secondary italic mb-8">
+        <h1 className="text-4xl md:text-5xl font-bold text-secondary italic mb-8">
           <span className="text-yellow-300">02.</span> Mes Services
         </h1>
 
@@ -98,8 +98,8 @@ function Service() {
                 Vous avez un projet de site internet ?
             </h2>
 
-            <div className="max-w-3xl mx-auto mb-8">
-                <p className="text-secondary font-semibold text-xl leading-relaxed">
+            <div className="max-w-3xl mx-auto mb-12">
+                <p className="text-secondary font-semibold text-2xl leading-relaxed">
                 Parlez-moi de vos besoins et construisons ensemble une solution web performante et adaptée à vos objectifs. Je vous réponds rapidement, sous 24h maximum.
                 </p>
             </div>
