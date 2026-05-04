@@ -34,6 +34,18 @@ function Navbar() {
     return () => observer.disconnect()
   }, [])
 
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden"
+    } else {
+      document.body.style.overflow = "auto"
+    }
+
+    return () => {
+      document.body.style.overflow = "auto"
+    }
+  }, [open])
+
   return (
     <nav className="fixed w-full z-50 backdrop-blur-xl border-b border-collapse">
       <div className="max-w-7xl mx-auto flex items-center justify-between p-4">
