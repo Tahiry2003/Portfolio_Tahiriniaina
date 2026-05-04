@@ -4,9 +4,9 @@ import { Circle } from "lucide-react"
 
 function Hero() {
   return (
-    <section id="hero" className="h-screen flex items-center">
+    <section id="hero" className="min-h-screen flex items-center py-20 md:py-0">
       <div className="absolute inset-0 hero-grid pointer-events-none"></div>
-      <div className="max-w-7xl mx-auto w-full px-4 md:px-6 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-16">
+      <div className="max-w-7xl mx-auto w-full px-4 md:px-6 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-16 pt-10 md:pt-0 pb-16 md:pb-0">
         
         <div className="flex-2 w-full md:w-auto">
           <div className="flex items-center justify-center md:justify-start gap-2 mb-4">
@@ -40,7 +40,7 @@ function Hero() {
           </div>
         </div>
         
-        <div className="flex-1 flex justify-center w-full md:w-auto mt-8 md:mt-0">
+        <div className="flex-1 flex justify-center w-full md:w-auto mt-24 md:mt-0">
           <div className="relative">
             
             <div className="relative flex justify-center">
