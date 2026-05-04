@@ -44,13 +44,13 @@ function Contact() {
               _ Formulaire de contact
             </h2>
 
-            <p className="text-secondary text-xl leading-relaxed font-semibold">
+            <p className="text-secondary text-lg leading-relaxed font-semibold">
               Vous avez un projet ou une idée ? N’hésitez pas à me contacter.
               Je suis disponible pour échanger et vous accompagner dans la création
               de votre solution web.
             </p>
 
-            <div className="space-y-4 text-secondary font-semibold text-xl">
+            <div className="space-y-4 text-secondary font-semibold text-lg">
               <a
                 href="mailto:tahiriniainaarson4@gmail.com"
                 className="flex items-center gap-3 transition group"

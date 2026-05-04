@@ -18,7 +18,7 @@ function Hero() {
               Ouvert aux opportunités
             </span>
           </div>
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-secondary space-y-3 md:space-y-4 text-center md:text-left">
+          <h1 className="text-2xl md:text-4xl font-bold text-secondary space-y-3 md:space-y-4 text-center md:text-left">
             <span>Je suis</span>
             
             <span className="block text-primary italic break-words">

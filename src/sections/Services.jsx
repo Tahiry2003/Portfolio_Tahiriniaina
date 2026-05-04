@@ -10,7 +10,7 @@ function Service() {
         </h1>
 
         <div className="max-w-7xl mb-12">
-          <p className="text-secondary leading-relaxed text-2xl font-semibold">
+          <p className="text-secondary leading-relaxed text-xl md:text-2xl font-semibold">
             Je crée des sites web modernes, rapides et efficaces pour vous aider à
             développer votre présence en ligne et atteindre vos objectifs.
           </p>
@@ -94,7 +94,7 @@ function Service() {
             </h2>
 
             <div className="max-w-3xl mx-auto mb-12">
-                <p className="text-secondary font-semibold text-2xl leading-relaxed">
+                <p className="text-secondary font-semibold text-xl md:text-2xl leading-relaxed">
                     Parlez-moi de votre projet et voyons comment créer une solution simple, efficace et adaptée à vos besoins. Je vous réponds rapidement, sous 24h maximum.
                 </p>
             </div>

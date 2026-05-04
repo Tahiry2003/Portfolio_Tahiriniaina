@@ -12,7 +12,7 @@ function About() {
               _ Qui suis-je ?
             </h2>
 
-            <p className="text-secondary leading-relaxed text-2xl font-semibold">
+            <p className="text-secondary leading-relaxed text-xl md:text-2xl font-semibold">
               Développeur passionné par la conception de solutions digitales,
               je me spécialise dans le développement Web
               <br /><br />
