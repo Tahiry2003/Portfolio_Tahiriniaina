@@ -45,7 +45,9 @@ function Contact() {
             </h2>
 
             <p className="text-secondary text-xl leading-relaxed font-semibold">
-              Un projet en tête ou simplement envie de discuter ? Je suis toujours ouvert aux nouvelles opportunités et aux idées créatives.
+              Vous avez un projet ou une idée ? N’hésitez pas à me contacter.
+              Je suis disponible pour échanger et vous accompagner dans la création
+              de votre solution web.
             </p>
 
             <div className="space-y-4 text-secondary font-semibold text-xl">
@@ -106,7 +108,7 @@ function Contact() {
             </div>
 
             <div className="grid grid-cols-2 gap-6">
-              <input name="email" type="email" placeholder="Email *"
+              <input name="email" type="email" placeholder="Email *" required
                 className="border-b border-gray-400 focus:border-black outline-none py-2 bg-transparent" />
               <input name="phone" type="text" placeholder="Téléphone"
                 className="border-b border-gray-400 focus:border-black outline-none py-2 bg-transparent" />
@@ -114,7 +116,7 @@ function Contact() {
 
             <textarea
               name="message"
-              placeholder="Votre message..."
+              placeholder="Décrivez votre projet ou votre besoin..."
               rows={8}
               className="w-full border-b border-gray-400 focus:border-black outline-none py-2 bg-transparent"
             />
@@ -132,7 +134,7 @@ function Contact() {
                 ? "Envoi..."
                 : isSent
                 ? "Message envoyé"
-                : "Envoyer"}
+                : "Envoyer le message"}
             </button>
           </form>
         </div>

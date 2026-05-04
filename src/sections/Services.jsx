@@ -11,9 +11,8 @@ function Service() {
 
         <div className="max-w-7xl mb-12">
           <p className="text-secondary leading-relaxed text-2xl font-semibold">
-            Je vous accompagne dans la création de solutions web modernes,
-            performantes et adaptées à vos objectifs, de la simple page
-            de présentation à des applications web complètes.
+            Je crée des sites web modernes, rapides et efficaces pour vous aider à
+            développer votre présence en ligne et atteindre vos objectifs.
           </p>
         </div>
 
@@ -29,9 +28,8 @@ function Service() {
             </h2>
 
             <p className="text-secondary text-xl font-semibold leading-relaxed">
-                Création de sites web modernes pour présenter votre activité,
-                vos services ou votre entreprise avec un design professionnel,
-                responsive et optimisé pour tous les écrans.
+                Création de sites web modernes pour présenter votre activité de manière professionnelle,
+                inspirer confiance et attirer de nouveaux clients.
             </p>
           </div>
 
@@ -45,9 +43,8 @@ function Service() {
                 Landing page
             </h2>
             <p className="text-secondary text-xl font-semibold leading-relaxed">
-                Conception de pages d’atterrissage optimisées pour la conversion,
-                idéales pour vos campagnes marketing, lancement de produit
-                ou collecte de leads.
+                Conception de pages optimisées pour convertir vos visiteurs en clients,
+                idéales pour lancer un produit ou promouvoir une offre.
             </p>
           </div>
 
@@ -58,12 +55,11 @@ function Service() {
                 </div>
             </div>
             <h2 className="text-2xl font-bold text-primary mb-2">
-                Refonte & amélioration
+                Refonte
             </h2>
             <p className="text-secondary text-xl font-semibold leading-relaxed">
-                Modernisation de votre site existant avec un design amélioré,
-                de meilleures performances, une expérience utilisateur optimisée
-                et une structure plus efficace.
+                Amélioration de votre site existant pour le rendre plus moderne, rapide et efficace,
+                avec une meilleure expérience utilisateur.
             </p>
           </div>
 
@@ -77,9 +73,8 @@ function Service() {
                 Application web sur mesure
             </h2>
             <p className="text-secondary text-xl font-semibold leading-relaxed">
-                Développement d’applications web sur mesure avec des fonctionnalités
-                avancées (authentification, gestion de données, tableaux de bord, etc),
-                adaptées à vos besoins spécifiques.
+                Développement d’applications web sur mesure avec des fonctionnalités adaptées
+                à vos besoins : gestion, tableaux de bord, authentification, etc.
             </p>
           </div>
 
@@ -95,12 +90,12 @@ function Service() {
             
 
             <h2 className="text-5xl font-bold text-primary mb-6 leading-tight">
-                Vous avez un projet de site internet ?
+                Vous avez une idée ou un projet ?
             </h2>
 
             <div className="max-w-3xl mx-auto mb-12">
                 <p className="text-secondary font-semibold text-2xl leading-relaxed">
-                Parlez-moi de vos besoins et construisons ensemble une solution web performante et adaptée à vos objectifs. Je vous réponds rapidement, sous 24h maximum.
+                    Parlez-moi de votre projet et voyons comment créer une solution simple, efficace et adaptée à vos besoins. Je vous réponds rapidement, sous 24h maximum.
                 </p>
             </div>
 

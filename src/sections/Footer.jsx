@@ -46,7 +46,7 @@ function Footer() {
         <div className="flex justify-center md:justify-end gap-5 text-3xl">
 
           <a
-            href="https://github.com/TON_GITHUB"
+            href="https://github.com/Tahiry2003"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-gray-400 transition transform hover:scale-125"
@@ -55,7 +55,7 @@ function Footer() {
           </a>
 
           <a
-            href="https://linkedin.com/in/TON_LINKEDIN"
+            href="https://linkedin.com/in/tahiriniaina-arson-2a8a1637a"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-500 transition transform hover:scale-125"
@@ -64,7 +64,7 @@ function Footer() {
           </a>
 
           <a
-            href="https://wa.me/261XXXXXXXXX"
+            href="https://wa.me/261343345703"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-green-500 transition transform hover:scale-125"

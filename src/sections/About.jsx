@@ -14,8 +14,7 @@ function About() {
 
             <p className="text-secondary leading-relaxed text-2xl font-semibold">
               Développeur passionné par la conception de solutions digitales,
-              je me spécialise dans le développement Web, Mobile ainsi que
-              dans la création de systèmes complexes comme les ERP et les SaaS.
+              je me spécialise dans le développement Web
               <br /><br />
               J’adopte une approche centrée sur l’architecture logicielle afin de
               concevoir des applications fiables, évolutives et adaptées aux besoins
