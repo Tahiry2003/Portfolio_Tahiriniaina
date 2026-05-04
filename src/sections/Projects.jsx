@@ -68,11 +68,11 @@ function Projects() {
 
               {/* CONTENT */}
               <div className="p-5 flex items-center justify-between border-t-2">
-                <div>
+                <div className="max-w-[350px]">
                   <h3 className="text-xl font-bold text-primary">
                     {p.title}
                   </h3>
-                  <p className="text-secondary text-base font-semibold">
+                  <p className="text-secondary text-base font-semibold truncate">
                     {p.desc}
                   </p>
                 </div>

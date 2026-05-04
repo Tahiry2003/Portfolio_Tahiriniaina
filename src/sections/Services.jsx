@@ -20,14 +20,13 @@ function Service() {
         <div className="grid md:grid-cols-2 gap-6">
           <div className="p-6 border border-gray-200 rounded-3xl">
             <div className="flex items-center gap-4 mb-4">
-                <div className="bg-green-300/20 text-green-300 p-4 rounded-xl text-2xl">
+                <div className="bg-green-300/20 text-green-300 p-4 border-2 border-green-200 rounded-xl text-2xl">
                     <FaGlobe />
                 </div>
-
-                <h2 className="text-2xl font-bold text-primary">
-                    Site vitrine
-                </h2>
             </div>
+            <h2 className="text-2xl font-bold text-primary mb-2">
+                Site vitrine
+            </h2>
 
             <p className="text-secondary text-xl font-semibold leading-relaxed">
                 Création de sites web modernes pour présenter votre activité,
@@ -38,14 +37,13 @@ function Service() {
 
           <div className="p-6 border border-gray-200 rounded-3xl">
             <div className="flex items-center gap-4 mb-4">
-                <div className="bg-green-300/20 text-green-300 p-4 rounded-xl text-2xl">
+                <div className="bg-green-300/20 text-green-300 p-4 border-2 border-green-200 rounded-xl text-2xl">
                     <FaRocket />
                 </div>
-
-                <h2 className="text-2xl font-bold text-primary">
-                    Landing page
-                </h2>
             </div>
+            <h2 className="text-2xl font-bold text-primary mb-2">
+                Landing page
+            </h2>
             <p className="text-secondary text-xl font-semibold leading-relaxed">
                 Conception de pages d’atterrissage optimisées pour la conversion,
                 idéales pour vos campagnes marketing, lancement de produit
@@ -55,14 +53,13 @@ function Service() {
 
           <div className="p-6 border border-gray-200 rounded-3xl">
             <div className="flex items-center gap-4 mb-4">
-                <div className="bg-green-300/20 text-green-300 p-4 rounded-xl text-2xl">
+                <div className="bg-green-300/20 text-green-300 p-4 border-2 border-green-200 rounded-xl text-2xl">
                     <FaSyncAlt />
                 </div>
-
-                <h2 className="text-2xl font-bold text-primary">
-                    Refonte & amélioration
-                </h2>
             </div>
+            <h2 className="text-2xl font-bold text-primary mb-2">
+                Refonte & amélioration
+            </h2>
             <p className="text-secondary text-xl font-semibold leading-relaxed">
                 Modernisation de votre site existant avec un design amélioré,
                 de meilleures performances, une expérience utilisateur optimisée
@@ -72,14 +69,13 @@ function Service() {
 
           <div className="p-6 border border-gray-200 rounded-3xl">
             <div className="flex items-center gap-4 mb-4">
-                <div className="bg-green-300/20 text-green-300 p-4 rounded-xl text-2xl">
+                <div className="bg-green-300/20 text-green-300 p-4 border-2 border-green-200 rounded-xl text-2xl">
                     <FaLaptopCode />
                 </div>
-
-                <h2 className="text-2xl font-bold text-primary">
-                    Application web sur mesure
-                </h2>
             </div>
+            <h2 className="text-2xl font-bold text-primary mb-2">
+                Application web sur mesure
+            </h2>
             <p className="text-secondary text-xl font-semibold leading-relaxed">
                 Développement d’applications web sur mesure avec des fonctionnalités
                 avancées (authentification, gestion de données, tableaux de bord, etc),
