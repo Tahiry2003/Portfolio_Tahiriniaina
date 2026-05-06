@@ -48,7 +48,7 @@ function About() {
 
           <div className="grid md:grid-cols-3 gap-6">
             <div className="p-6 text-center">
-              <h3 className="text-2xl md:text-3xl font-bold text-primary mb-8">
+              <h3 className="text-xl md:text-2xl font-bold text-primary mb-8">
                 Frontend
               </h3>
 
@@ -75,7 +75,7 @@ function About() {
             </div>
 
             <div className="p-6 text-center">
-              <h3 className="text-2xl md:text-3xl font-bold text-primary mb-8">
+              <h3 className="text-xl md:text-2xl font-bold text-primary mb-8">
                 Backend & SGBD
               </h3>
 
@@ -105,7 +105,7 @@ function About() {
             </div>
 
             <div className="p-6 text-center">
-              <h3 className="text-2xl md:text-3xl font-bold text-primary mb-8">
+              <h3 className="text-xl md:text-2xl font-bold text-primary mb-8">
                 Skills
               </h3>
 
@@ -126,6 +126,82 @@ function About() {
             </div>
 
           </div>        
+        </div>
+
+        <div className="mt-20">
+          <h2 className="text-2xl md:text-3xl font-bold text-primary italic mb-6">
+            _ Expériences
+          </h2>
+
+          <p className="text-secondary leading-relaxed text-xl md:text-2xl font-semibold mb-6">
+            Quelques expériences concrètes qui ont renforcé mes compétences en développement web.
+          </p>
+
+          <div className="space-y-6">
+            <div className="p-6 rounded-3xl border border-gray-200 shadow-sm">
+              <div className="flex flex-col md:flex-row md:justify-between">
+                <h3 className="text-2xl font-bold text-primary">
+                  Développeur Web | Full-Stack
+                </h3>
+
+                <p className="text-lg md:text-xl text-yellow-300 font-bold mt-3 md:mt-0 px-3 py-1 bg-yellow-50/60 rounded-xl border border-yellow-100">
+                  sep 2024 - nov 2024
+                </p>
+              </div>
+
+              <p className="text-xl text-green-300 font-bold mt-3">
+                Ministere de l'Interieur
+              </p>
+
+              <p className="text-secondary leading-relaxed text-xl md:text-2xl font-semibold mt-3">
+                Participation au développement d’une application web avec React et Node.js.
+                Mise en place d’API REST et gestion de base de données PostgreSQL.
+              </p>
+
+              <ul className="flex flex-wrap gap-3 justify-start font-semibold text-lg mt-5">
+                {["React", "Node.js", "Express", "PostgreSQL", "Git"].map((tech, index) => (
+                  <li
+                    key={index}
+                    className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse"
+                  >
+                    {tech}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="p-6 rounded-3xl border border-gray-200 shadow-sm">
+              <div className="flex flex-col md:flex-row md:justify-between">
+                <h3 className="text-2xl font-bold text-primary">
+                  Développeur Web | Full-Stack
+                </h3>
+
+                <p className="text-lg md:text-xl text-yellow-300 font-bold mt-3 md:mt-0 px-3 py-1 bg-yellow-50/60 rounded-xl border border-yellow-100">
+                  sep 2024 - nov 2024
+                </p>
+              </div>
+
+              <p className="text-xl text-green-300 font-bold mt-3">
+                NJ CAM Systems
+              </p>
+
+              <p className="text-secondary leading-relaxed text-xl md:text-2xl font-semibold mt-3">
+                Participation au développement d’une application web avec React et Node.js.
+                Mise en place d’API REST et gestion de base de données PostgreSQL.
+              </p>
+
+              <ul className="flex flex-wrap gap-3 justify-start font-semibold text-lg mt-5">
+                {["React", "Node.js", "Express", "PostgreSQL", "Git"].map((tech, index) => (
+                  <li
+                    key={index}
+                    className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse"
+                  >
+                    {tech}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
