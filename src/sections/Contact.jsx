@@ -37,8 +37,6 @@ function Contact() {
         </h1>
 
         <div className="grid md:grid-cols-2 gap-16">
-
-          {/* LEFT */}
           <div className="space-y-6">
             <h2 className="text-2xl md:text-3xl font-bold text-primary italic mb-8 flex text-start">
               _ Formulaire de contact
@@ -99,19 +97,23 @@ function Contact() {
             </div>
           </div>
 
-          <form ref={form} onSubmit={sendEmail} className="space-y-6 font-semibold">
-            <div className="grid grid-cols-2 gap-6">
-              <input name="last_name" type="text" placeholder="Prénom *"
-                className="border-b border-gray-400 focus:border-black outline-none py-2 bg-transparent" />
-              <input name="first_name" type="text" placeholder="Nom *"
-                className="border-b border-gray-400 focus:border-black outline-none py-2 bg-transparent" />
-            </div>
+          <form ref={form} onSubmit={sendEmail} className="space-y-6 font-semibold ">
+            <div className="grid grid-cols-1 gap-6">
+              <input
+                name="first_name"
+                type="text"
+                placeholder="Nom *"
+                required
+                className="border-b border-gray-400 focus:border-black outline-none py-2 bg-transparent"
+              />
 
-            <div className="grid grid-cols-2 gap-6">
-              <input name="email" type="email" placeholder="Email *" required
-                className="border-b border-gray-400 focus:border-black outline-none py-2 bg-transparent" />
-              <input name="phone" type="text" placeholder="Téléphone"
-                className="border-b border-gray-400 focus:border-black outline-none py-2 bg-transparent" />
+              <input
+                name="email"
+                type="email"
+                placeholder="Email *"
+                required
+                className="border-b border-gray-400 focus:border-black outline-none py-2 bg-transparent"
+              />
             </div>
 
             <textarea

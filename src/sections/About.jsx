@@ -129,11 +129,11 @@ function About() {
         </div>
 
         <div className="mt-20">
-          <h2 className="text-2xl md:text-3xl font-bold text-primary italic mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-primary italic mb-8">
             _ Expériences
           </h2>
 
-          <p className="text-secondary leading-relaxed text-xl md:text-2xl font-semibold mb-6">
+          <p className="text-secondary leading-relaxed text-xl md:text-2xl font-semibold mb-8">
             Quelques expériences concrètes qui ont renforcé mes compétences en développement web.
           </p>
 
@@ -154,8 +154,7 @@ function About() {
               </p>
 
               <p className="text-secondary leading-relaxed text-xl md:text-2xl font-semibold mt-3">
-                Participation au développement d’une application web avec React et Node.js.
-                Mise en place d’API REST et gestion de base de données PostgreSQL.
+                Développement d’une application web avec React et Node.js avec Express, incluant la conception d’API REST et la gestion de bases de données PostgreSQL.
               </p>
 
               <ul className="flex flex-wrap gap-3 justify-start font-semibold text-lg mt-5">
