@@ -45,11 +45,7 @@
     "images": ["/projet31.png"],
     "tech": ["React", "TailwindCSS"],
     "details": [
-      "Création API REST",
-      "Authentification JWT",
-      "CRUD complet",
-      "Gestion base de données PostgreSQL",
-      "Interface responsive"
+
     ],
     "github": "https://github.com/Tahiry2003/gfb_periodes_constantes.git"
   },
@@ -68,7 +64,6 @@
       "CRUD complet",
       "Gestion base de données PostgreSQL",
       "Interface responsive"
-    ],
-    "github": "https://github.com/Tahiry2003/gfb_periodes_constantes.git"
+    ]
   }
 ]

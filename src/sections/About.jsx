@@ -145,7 +145,7 @@ function About() {
                 </h3>
 
                 <p className="text-lg md:text-xl text-yellow-300 font-bold mt-3 md:mt-0 px-3 py-1 bg-yellow-50/60 rounded-xl border border-yellow-100">
-                  sep 2024 - nov 2024
+                  sep 2025 - nov 2025
                 </p>
               </div>
 
