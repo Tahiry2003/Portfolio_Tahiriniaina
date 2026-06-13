@@ -90,7 +90,7 @@ function About() {
                   Flask
                 </li>
                 <li className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse">
-                  Laravel
+                  Python
                 </li>
                 <li className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg border-2 border-collapse">
                   API REST
